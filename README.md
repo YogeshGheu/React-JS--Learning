@@ -26,6 +26,12 @@ This repository documents my progress and experiments while learning React.js:
    - Used an array of colors and the `.map()` function to generate buttons dynamically.  
    - Clicking a button updates the background color of the page.  
 
+6. Built a Password Generator Application:
+   - Learned how to use `useState`, `useRef`, `useEffect`, and `useCallback` hooks to manage and optimize state and side effects.
+   - Created a function to dynamically generate random passwords based on user preferences (length, numbers, special characters).
+   - Used the `useRef` hook to interact with the DOM for copying the generated password to the clipboard.
+   - Added an interactive slider to adjust the password length and checkboxes to toggle the inclusion of numbers and special characters.
+   - Improved UI using Tailwind CSS, focusing on responsiveness and styling.
 
    
 
