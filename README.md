@@ -54,4 +54,18 @@ This repository documents my progress and experiments while learning React.js:
     -   **Data flows down**: Parent passes the state or data to its children through props.
     -   **Updates flow up**: Children communicate updates back to the parent via callback functions.
 
+9. **React Router DOM**
+   - Learned how to use **React Router DOM**, a third-party library, for implementing client-side routing in React applications.  
+   - Installed React Router using the command:  
+     ```bash
+     npm install react-router-dom
+     ```  
+   - Explored how routing works in React, enabling navigation without full page reloads.  
+   - Learned the differences between `Link` and `NavLink` compared to the traditional `<a>` tag.  
+   - Implemented layouts to organize and integrate various components seamlessly.  
+   - Used `useParams` to extract parameters from the URL and utilize them within the layout.  
+   - Discovered how React Router's loader functionality works to fetch or preload data before rendering a page, improving user experience by initiating data loading when a link is hovered over.  
+   - Created a component to fetch data from the GitHub API, displaying my followers and profile picture dynamically.  
+ 
+
 This document reflects my ongoing progress in React.js. Feedback and suggestions are welcome to enhance my learning experience. 😊
