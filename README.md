@@ -50,24 +50,27 @@ This repository documents my progress and experiments while learning React.js:
     - Also got a little help from ChatGPT.
 
 8. **Learn "Lifting State Up" concept properly:**
-    -  **Lifting State Up** refers to moving the shared state to the closest common ancestor of components that need to access or modify it. This ensures a unidirectional data flow:
-    -   **Data flows down**: Parent passes the state or data to its children through props.
-    -   **Updates flow up**: Children communicate updates back to the parent via callback functions.
+
+    - **Lifting State Up** refers to moving the shared state to the closest common ancestor of components that need to access or modify it. This ensures a unidirectional data flow:
+    - **Data flows down**: Parent passes the state or data to its children through props.
+    - **Updates flow up**: Children communicate updates back to the parent via callback functions.
 
 9. **React Router DOM**
-   - Learned how to use **React Router DOM**, a third-party library, for implementing client-side routing in React applications.  
-   - Installed React Router using the command:  
-     ```bash
-     npm install react-router-dom
-     ```  
-   - Explored how routing works in React, enabling navigation without full page reloads.  
-   - Learned the differences between `Link` and `NavLink` compared to the traditional `<a>` tag.  
-   - Implemented layouts to organize and integrate various components seamlessly.  
-   - Used `useParams` to extract parameters from the URL and utilize them within the layout.  
-   - Discovered how React Router's loader functionality works to fetch or preload data before rendering a page, improving user experience by initiating data loading when a link is hovered over.  
-   - Created a component to fetch data from the GitHub API, displaying my followers and profile picture dynamically.  
+
+    - Learned how to use **React Router DOM**, a third-party library, for implementing client-side routing in React applications.
+    - Installed React Router using the command:
+        ```bash
+        npm install react-router-dom
+        ```
+    - Explored how routing works in React, enabling navigation without full page reloads.
+    - Learned the differences between `Link` and `NavLink` compared to the traditional `<a>` tag.
+    - Implemented layouts to organize and integrate various components seamlessly.
+    - Used `useParams` to extract parameters from the URL and utilize them within the layout.
+    - Discovered how React Router's loader functionality works to fetch or preload data before rendering a page, improving user experience by initiating data loading when a link is hovered over.
+    - Created a component to fetch data from the GitHub API, displaying my followers and profile picture dynamically.
 
 10. **Learn Context API in React**
+
     - Learned how to create a context using `React.createContext()`.
     - Understood how to define the **Provider**, pass variables into it, and wrap the app with the Provider.
     - Explored how to add and apply variable values inside the context.
@@ -76,8 +79,12 @@ This repository documents my progress and experiments while learning React.js:
     - In the **10_ContextAPI_2** folder, I implemented the basic concept of defining the overall setup and using it with a simple login button. I also explored a different approach by defining the Provider separately.
     - In the **10_ContextAPI_3** folder, I created a card that switches between **light** and **dark** themes using a button. The button updates the state in the context. Additionally, I applied some **Tailwind CSS** configurations for styling.
 
+11. **TODO App using Context API and Local Storage**
 
-    
- 
+    - Built a **TODO App** using the Context API to manage state efficiently.
+    - The context holds all the todos and their respective functions: `todos`, `addTodo`, `updateTodo`, `deleteTodo`, and `toggleComplete`.
+    - Exported the **`useTodo`** hook (which uses `useContext(TodoContext)`) and the **`TodoProvider`** (`TodoContext.Provider`) from the same context file for easier access and reusability.
+    - Integrated **localStorage** using `localStorage.setItem` and `localStorage.getItem` to persist todos across page refreshes.
+
 
 This document reflects my ongoing progress in React.js. Feedback and suggestions are welcome to enhance my learning experience. 😊
