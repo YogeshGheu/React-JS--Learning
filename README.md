@@ -66,6 +66,18 @@ This repository documents my progress and experiments while learning React.js:
    - Used `useParams` to extract parameters from the URL and utilize them within the layout.  
    - Discovered how React Router's loader functionality works to fetch or preload data before rendering a page, improving user experience by initiating data loading when a link is hovered over.  
    - Created a component to fetch data from the GitHub API, displaying my followers and profile picture dynamically.  
+
+10. **Learn Context API in React**
+    - Learned how to create a context using `React.createContext()`.
+    - Understood how to define the **Provider**, pass variables into it, and wrap the app with the Provider.
+    - Explored how to add and apply variable values inside the context.
+    - Learned how to fetch variable values from the context and update them when needed.
+    - In the **10_ContextAPI_1** folder, I learned the fundamentals of how the context system works by replacing props with context to manage a counter value.
+    - In the **10_ContextAPI_2** folder, I implemented the basic concept of defining the overall setup and using it with a simple login button. I also explored a different approach by defining the Provider separately.
+    - In the **10_ContextAPI_3** folder, I created a card that switches between **light** and **dark** themes using a button. The button updates the state in the context. Additionally, I applied some **Tailwind CSS** configurations for styling.
+
+
+    
  
 
 This document reflects my ongoing progress in React.js. Feedback and suggestions are welcome to enhance my learning experience. 😊
