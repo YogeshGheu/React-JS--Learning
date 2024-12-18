@@ -86,5 +86,4 @@ This repository documents my progress and experiments while learning React.js:
     - Exported the **`useTodo`** hook (which uses `useContext(TodoContext)`) and the **`TodoProvider`** (`TodoContext.Provider`) from the same context file for easier access and reusability.
     - Integrated **localStorage** using `localStorage.setItem` and `localStorage.getItem` to persist todos across page refreshes.
 
-
 This document reflects my ongoing progress in React.js. Feedback and suggestions are welcome to enhance my learning experience. 😊
