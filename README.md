@@ -86,4 +86,66 @@ This repository documents my progress and experiments while learning React.js:
     - Exported the **`useTodo`** hook (which uses `useContext(TodoContext)`) and the **`TodoProvider`** (`TodoContext.Provider`) from the same context file for easier access and reusability.
     - Integrated **localStorage** using `localStorage.setItem` and `localStorage.getItem` to persist todos across page refreshes.
 
+12. **Redux-Toolkit**
+
+    - To set up Redux Toolkit and React-Redux, run the following commands:
+        ```bash
+        npm install @reduxjs/toolkit react-redux
+        ```
+    - Define someSlice using `createSlice` from `@reduxjs/toolkit`. This helps manage a slice of state. It takes the following parameters:
+
+        - `name`: A unique name for the slice. This name helps identify the slice in the Redux store.
+        - `initialState`: The default state for this slice. This represents the initial state when the store is first loaded or reset.
+        - `reducers`: An object defining functions to update the state. 
+        - Each reducer function will receive:
+            - `state`: The current state of the slice.
+            - `actions`: An object containing the `payload` (the data passed with the action).
+
+        - Each reducer modifies the `state`, not the `initialState`. For example, in the `addItem` reducer, you can update the state like this:
+
+            ````js
+            state.push(action.payload);
+
+    - Export the actions and reducer:
+
+        - Export actions using:
+
+        ```javascript
+        export const { action1, action2, ... } = someSlice.actions;
+        ```
+
+        - Export the reducer as the default:
+
+        ```javascript
+        export default someSlice.reducer;
+        ```
+
+    - Use `configureStore` from `@reduxjs/toolkit` to create the store and provide the reducer as an object:
+        ```javascript
+        const store = configureStore({
+        	reducer: {
+        		nameOfTheReducer: defaultExportedReducerFromSomeSlice,
+        	},
+        });
+        ```
+    - Finally, export the store as the default export:
+
+        ```javascript
+        export default store;
+        ```
+
+    - Import the default exported store in `Main.jsx` and wrap `<App />` with `react-redux.Provider`. Pass the store as a prop to the `Provider`:
+
+        ```javascript
+        <Provider store={store}>
+        <App />
+        </Provider>,
+        ```
+
+    - We can use the store in any component by importing `{ useSelector, useDispatch }` from `'react-redux'`.
+        - First, import the actions like `{ action1, action2, ... }` from `someSlice`.
+        - Use `useSelector((state) => state.nameOfTheReducer.value)` to access the state from the Redux store.
+        - Use `const dispatch = useDispatch();` to dispatch actions and update the state, e.g., `dispatch(action1())`.
+
 This document reflects my ongoing progress in React.js. Feedback and suggestions are welcome to enhance my learning experience. 😊
+````
