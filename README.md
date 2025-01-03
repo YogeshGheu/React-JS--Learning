@@ -148,4 +148,3 @@ This repository documents my progress and experiments while learning React.js:
         - Use `const dispatch = useDispatch();` to dispatch actions and update the state, e.g., `dispatch(action1())`.
 
 This document reflects my ongoing progress in React.js. Feedback and suggestions are welcome to enhance my learning experience. 😊
-````
